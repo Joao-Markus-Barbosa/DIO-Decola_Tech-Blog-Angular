@@ -1,10 +1,5 @@
 # Angular Blog
 
---- 
-![](https://imgur.com/a/blog-angular-ZhkV7JZ.gif)
-
----
-
 Este projeto é um blog pessoal desenvolvido como parte do **desafio do Decola Tech**, um programa da **DIO (Digital Innovation One)** em parceria com a **Avanade**. O objetivo foi criar uma aplicação utilizando Angular, TypeScript, HTML e CSS, aplicando conceitos de componentização, modularização e boas práticas de desenvolvimento.
 
 O blog foi criado para exibir informações sobre eu, meus projetos, certificados e conquistas, demonstrando habilidades técnicas e criativas adquiridas durante o programa.
@@ -43,3 +38,4 @@ O projeto está organizado da seguinte forma:
 
 ---
 
+![GIF do Blog Angular](./assets/blog-angular.gif)
