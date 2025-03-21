@@ -1,0 +1,51 @@
+.container__small-card-two{
+  margin-bottom: 15px;
+
+  @media(min-width: 1000px) {
+    width: 600px;
+  }
+}
+
+.container__small-card-content{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.icons-linguagem{
+  padding-top: 15px;
+}
+
+.small-card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.small-card__title > h1 {
+  font-size: 40px;
+}
+
+
+.container__small-card__separator{
+  margin-top: 10px;
+}
+
+.icons-linguagem {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha se não couberem */
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  gap: 10px; /* Espaço entre os ícones */
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease; /* Efeito de hover */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}

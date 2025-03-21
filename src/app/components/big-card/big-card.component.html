@@ -1,24 +1,38 @@
 <div class="container__big-card">
+  <!-- Carrossel do Bootstrap -->
+  <div *ngIf="carouselImages.length > 0" id="carouselExample"
+    class="carousel slide"
+    data-bs-ride="carousel"
+    data-bs-interval="3000">
 
-  <div class="big-card__photo">
-    <img
-      src="{{ photoCover }}"
-      alt=""
-      height="200px"
-      srcset=""
-    >
+    <div class="carousel-inner">
+      <!-- Imagens do carrossel -->
+      <div *ngFor="let image of carouselImages; let i = index" class="carousel-item" [class.active]="i === 0">
+        <img [src]="image" class="d-block w-100" [alt]="'Imagem ' + (i + 1)">
+      </div>
+    </div>
+
+    <!-- Controles do carrossel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
   </div>
 
+  <!-- Título e Descrição -->
   <div class="big-card__title">
     <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
   </div>
-
   <div class="big-card__description">
     <p>
       <a [routerLink]="['content', Id]">
-          {{ cardDescription }}
+        {{ cardDescription }}
       </a>
     </p>
   </div>
-
 </div>
+

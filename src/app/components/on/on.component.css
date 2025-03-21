@@ -1,0 +1,53 @@
+/* Estilo da seção "Sobre Mim" */
+.about-me {
+  padding: 40px 20px;
+  background-color:#111111; /* Cor de fundo */
+  text-align: center;
+}
+
+/* Container do conteúdo */
+.about-me__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título da seção */
+.about-me__title {
+  font-size: 2.5rem;
+  color: #b9b9b9;
+  margin-bottom: 20px;
+}
+
+/* Layout do conteúdo */
+.about-me__content {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+
+
+/* Estilo do texto */
+.about-me__text {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-me__text p {
+  margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-me__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-me__text {
+    text-align: center;
+  }
+}
