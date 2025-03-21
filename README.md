@@ -1,27 +1,45 @@
-# AngularBlog
+# Angular Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+--- 
+![](https://imgur.com/a/blog-angular-ZhkV7JZ.gif)
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto é um blog pessoal desenvolvido como parte do **desafio do Decola Tech**, um programa da **DIO (Digital Innovation One)** em parceria com a **Avanade**. O objetivo foi criar uma aplicação utilizando Angular, TypeScript, HTML e CSS, aplicando conceitos de componentização, modularização e boas práticas de desenvolvimento.
 
-## Code scaffolding
+O blog foi criado para exibir informações sobre eu, meus projetos, certificados e conquistas, demonstrando habilidades técnicas e criativas adquiridas durante o programa.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Página inicial** com cards grandes e pequenos para destacar conteúdos principais e secundários.
+- **Menu de navegação** para facilitar a exploração do blog.
+- **Seção de certificados**, exibindo conquistas e qualificações de forma organizada.
+- Design responsivo e moderno, garantindo uma boa experiência em diferentes dispositivos.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tecnologias Utilizadas
 
-## Running end-to-end tests
+- **Angular**: Framework utilizado para criar a estrutura do blog, com componentes reutilizáveis e modularização.
+- **TypeScript**: Linguagem principal para a lógica do projeto, garantindo tipagem estática e maior robustez no código.
+- **HTML**: Estruturação do conteúdo das páginas.
+- **CSS**: Estilização dos componentes e páginas, com foco em design limpo e responsivo.
+- **Angular CLI**: Ferramenta utilizada para criar e gerenciar o projeto.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Estrutura do Projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+O projeto está organizado da seguinte forma:
+
+- **components**: Contém os componentes reutilizáveis, como:
+  - `big-card`: Componente para exibir cards grandes, possivelmente usados para destaques.
+  - `menu-bar`: Componente para a barra de navegação.
+  - `small-card` e `small-card-two`: Componentes para cards menores, usados para listar conteúdos secundários.
+- **pages**: Contém as páginas do blog, como a página inicial (`home`).
+- **data**: Arquivos de dados, como `certificados.ts`, que armazenam informações exibidas no blog.
+
+---
+
